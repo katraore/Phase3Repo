@@ -1,10 +1,8 @@
 package com.sporty.shoes.controller;
 
-import java.util.Date;
-import java.util.List;
 
 
-import javax.annotation.PostConstruct;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -24,8 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.sporty.shoes.exceptionhandler.ExceptionHandler;
 import com.sporty.shoes.model.PurchaseReport;
 import com.sporty.shoes.model.SportyShoesModel;
-import com.sporty.shoes.repository.PurchaseReportRepository;
-import com.sporty.shoes.repository.SportyShoesRepository;
+
 import com.sporty.shoes.service.SportyShoesService;
 
 @RestController
@@ -35,7 +32,7 @@ public class SportyShoesController {
 	
 
 	@Autowired
-	private SportyShoesService service;
+	 SportyShoesService service;
 	
 	private MultiValueMap<String, String> error;
 	
