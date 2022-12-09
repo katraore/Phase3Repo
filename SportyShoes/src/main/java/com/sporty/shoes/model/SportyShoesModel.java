@@ -1,5 +1,6 @@
 package com.sporty.shoes.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -12,10 +13,19 @@ public class SportyShoesModel {
 	@Id
 	@GeneratedValue
 	private int id;
+	
+	@Column(name = "shoe_name")
 	private String name;
+	
+	@Column(name = "shoe_category")
 	private String category;
+	
+	@Column(name = "shoe_size")
 	private int size;
+	
+	@Column(name = "shoe_price")
 	private double price;
+	
 	public SportyShoesModel(int id, String name, String category, int size, double price) {
 		super();
 		this.id = id;

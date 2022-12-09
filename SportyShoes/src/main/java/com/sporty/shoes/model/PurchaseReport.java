@@ -2,6 +2,7 @@ package com.sporty.shoes.model;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -14,9 +15,16 @@ public class PurchaseReport {
 	@Id
 	@GeneratedValue
 	private int id;
+	
+	@Column(name = "purchase_category")
 	private String category;
+	
+	@Column(name = "purchase_date")
 	private Date date;
+	
+	@Column(name = "order_list")
 	String orderList;
+	
 	public PurchaseReport(int id, String category, Date date, String orderList) {
 		super();
 		this.id = id;
